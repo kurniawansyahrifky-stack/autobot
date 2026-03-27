@@ -12,24 +12,24 @@ from queue import Queue
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import Updater, MessageHandler, Filters, CallbackContext, CommandHandler, CallbackQueryHandler
 from telethon import TelegramClient
-import database
+import database4
 
 loop = asyncio.new_event_loop()
 asyncio.set_event_loop(loop)
 
-TOKEN = "8618687689:AAFep2yL5CCUgRbT5WVMJazanJ4A46mYfkk"
+TOKEN = "8621144366:AAFp7751PPtXsRv2IJ54C9klumMWcijY810"
 API_URL = "http://127.0.0.1:5000/get"
-TARGET_CHATS = [-1003386661267]
-FORCE_GROUP = -1003386661267   # 🔥 WAJIB (buat cek join)
+TARGET_CHATS = [-1002208118831]
+FORCE_GROUP = -1002208118831   # 🔥 WAJIB (buat cek join)
 FORCE_LINK = "https://t.me/officiallgarfieldgrub"
 
-OWNER_IDS = [8209644174, 7973806575]
-PARTNER_FILE = "partner.json4"
-SETTING_FILE = "setting.json4"
+OWNER_IDS = [8209644174, 6479082885]
+PARTNER_FILE = "partner.json7"
+SETTING_FILE = "setting.json7"
 
 api_id = 33370509
 api_hash = "669af6caebf2aca264b16cf8b40d37b2"
-client = TelegramClient("session_new3", api_id, api_hash)
+client = TelegramClient("session_new7", api_id, api_hash)
 
 task_queue = Queue()
 running_task = False  # 🔥 ANTI DOUBLE TASK
@@ -289,12 +289,12 @@ def start_cmd(update: Update, context: CallbackContext):
 
     # ================= RGB GLITCH =================
     glitch = [
-        "💜 𝒦𝒜𝒯ℛ𝒪 💜",
-        "💙 𝒦𝒜𝒯ℛ𝒪 💙",
-        "💚 𝐊𝐀𝐓𝐑𝐎 💚",
-        "💛 𝒦𝒜𝒯ℛ𝒪 💛",
-        "🧡 𝐊𝐀𝐓𝐑𝐎 🧡",
-        "❤️ 𝑲𝑨𝑻𝑹𝑶 ❤️"
+        "💜 NIGHT HAVEN 💜",
+        "💙 NIGHT HAVEN 💙",
+        "💚 NIGHT HAVEN 💚",
+        "💛 NIGHT HAVEN 💛",
+        "🧡 NIGHT HAVEN 🧡",
+        "❤️ NIGHT HAVEN ❤️"
     ]
 
     for g in glitch:
@@ -338,7 +338,7 @@ def start_cmd(update: Update, context: CallbackContext):
 
     # ================= FINAL TEXT (FIX CLEAN) =================
     text = (
-        "𓊆 ✨ 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐁𝐎𝐓 𝐊𝐀𝐓𝐑𝐎 ✨ 𓊇 \n\n"
+        "𓊆 ✨ 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐍𝐈𝐆𝐇𝐓 𝐇𝐀𝐕𝐄𝐍 ✨ 𓊇 \n\n"
 
         "╭───────────────╮\n"
         "│ ٬٬ ࣪ ، 𒀭 bot tag all dengan sistem otomatis.\n"
@@ -378,7 +378,7 @@ def start_cmd(update: Update, context: CallbackContext):
         pass
 
     # ================= FOTO SYSTEM =================
-    photo_path = "database/start.jpg"
+    photo_path = "database4/start.jpg"
 
     if data.get("start_pict"):
         context.bot.send_photo(
@@ -470,7 +470,7 @@ def get_members(chat_id):
 
 
 # ================= LIMIT GC =================
-LIMIT_FILE = "limit_gc.json"
+LIMIT_FILE = "limit_gc.json4"
 
 from datetime import datetime, timedelta, timezone
 
@@ -591,7 +591,7 @@ def tagall_worker():
                 "🚀 𝐓𝐀𝐆𝐀𝐋𝐋 𝐃𝐈𝐌𝐔𝐋𝐀𝐈\n\n"
                 f"🔗 partner : {partner_link}\n"
                 "⏰   durasi : 5 menit\n"
-                "📍 JIKA BOT EROR SILAHKAN KESINI @tagalhyperBot"
+                "📍 JIKA BOT EROR SILAHKAN KESINI @TAGallnigth_bot"
             )
 
             bot.send_message(chat_id, start_msg)
@@ -632,7 +632,7 @@ def tagall_worker():
                     try:
                         msg = bot.send_message(
                             chat_id,
-                            f" 💕 𝑩𝑶𝑻 𝑻𝑨𝑮𝑨𝑳𝑳 𝑲𝑨𝑻𝑹𝑶 💖\n\n{text}\n\n{mention_text}",
+                            f" 💕 𝑩𝑶𝑻 𝑻𝑨𝑮𝑨𝑳𝑳 𝐍𝐈𝐆𝐇𝐓 𝐇𝐀𝐕𝐄𝐍 💖\n\n{text}\n\n{mention_text}",
                             parse_mode="HTML",
                         )
 
@@ -835,11 +835,11 @@ def restore_cmd(update, context):
             # ================= BACKUP LAMA =================
             backup_name = f"backup_before_restore_{int(time.time())}.zip"
             with zipfile.ZipFile(backup_name, 'w') as backup:
-                if os.path.exists("partner.json"):
-                    backup.write("partner.json")
-                if os.path.exists("setting.json"):
-                    backup.write("setting.json")
-                if os.path.exists("database"):
+                if os.path.exists("partner.json7"):
+                    backup.write("partner.json7")
+                if os.path.exists("setting.json7"):
+                    backup.write("setting.json7")
+                if os.path.exists("database4"):
                     for root, dirs, files2 in os.walk("database"):
                         for f in files2:
                             backup.write(os.path.join(root, f))
@@ -861,7 +861,7 @@ def main():
     updater = Updater(TOKEN, use_context=True)
     bot = updater.bot
 
-    database.start_system(bot)
+    database4.start_system(bot)
 
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("restore", restore_cmd))
