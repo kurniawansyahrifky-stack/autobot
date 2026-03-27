@@ -17,19 +17,19 @@ import database
 loop = asyncio.new_event_loop()
 asyncio.set_event_loop(loop)
 
-TOKEN = "8307438695:AAEU8MPX2BSj7EH5VOjHVhtfqloS7olHObg"
+TOKEN = "8618687689:AAFep2yL5CCUgRbT5WVMJazanJ4A46mYfkk"
 API_URL = "http://127.0.0.1:5000/get"
-TARGET_CHATS = [-1002430300514]
-FORCE_GROUP = -1002430300514   # 🔥 WAJIB (buat cek join)
-FORCE_LINK = "https://t.me/officialhyperion"
+TARGET_CHATS = [-1003386661267]
+FORCE_GROUP = -1003386661267   # 🔥 WAJIB (buat cek join)
+FORCE_LINK = "https://t.me/officiallgarfieldgrub"
 
-OWNER_IDS = [8209644174, 5674665043]
-PARTNER_FILE = "partner.json"
-SETTING_FILE = "setting.json"
+OWNER_IDS = [8209644174, 7973806575]
+PARTNER_FILE = "partner.json4"
+SETTING_FILE = "setting.json4"
 
 api_id = 33370509
 api_hash = "669af6caebf2aca264b16cf8b40d37b2"
-client = TelegramClient("session_new1", api_id, api_hash)
+client = TelegramClient("session_new3", api_id, api_hash)
 
 task_queue = Queue()
 running_task = False  # 🔥 ANTI DOUBLE TASK
@@ -289,12 +289,12 @@ def start_cmd(update: Update, context: CallbackContext):
 
     # ================= RGB GLITCH =================
     glitch = [
-        "💜 HYPΞRIØN 💜",
-        "💙 HYPERION 💙",
-        "💚 HYPΞRIØN 💚",
-        "💛 HYPERION 💛",
-        "🧡 HYPΞRIØN 🧡",
-        "❤️ HYPERION ❤️"
+        "💜 𝒦𝒜𝒯ℛ𝒪 💜",
+        "💙 𝒦𝒜𝒯ℛ𝒪 💙",
+        "💚 𝐊𝐀𝐓𝐑𝐎 💚",
+        "💛 𝒦𝒜𝒯ℛ𝒪 💛",
+        "🧡 𝐊𝐀𝐓𝐑𝐎 🧡",
+        "❤️ 𝑲𝑨𝑻𝑹𝑶 ❤️"
     ]
 
     for g in glitch:
@@ -338,7 +338,7 @@ def start_cmd(update: Update, context: CallbackContext):
 
     # ================= FINAL TEXT (FIX CLEAN) =================
     text = (
-        "𓊆 ✨ 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐁𝐎𝐓 𝐇𝐘𝐏𝐄𝐑𝐈𝐎𝐍 ✨ 𓊇 \n\n"
+        "𓊆 ✨ 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐁𝐎𝐓 𝐊𝐀𝐓𝐑𝐎 ✨ 𓊇 \n\n"
 
         "╭───────────────╮\n"
         "│ ٬٬ ࣪ ، 𒀭 bot tag all dengan sistem otomatis.\n"
@@ -632,7 +632,7 @@ def tagall_worker():
                     try:
                         msg = bot.send_message(
                             chat_id,
-                            f" 💕 BOT TAGALL HY0ERION 💖\n\n{text}\n\n{mention_text}",
+                            f" 💕 𝑩𝑶𝑻 𝑻𝑨𝑮𝑨𝑳𝑳 𝑲𝑨𝑻𝑹𝑶 💖\n\n{text}\n\n{mention_text}",
                             parse_mode="HTML",
                         )
 
