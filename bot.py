@@ -851,7 +851,7 @@ def restore_cmd(update, context):
 
         # ================= AUTO RESTART =================
         import os
-        os.execv("/root/tagallbot/venv/bin/python", ["python", "bot.py"])
+        os.execv("/root/partnerbot/venv/bin/python", ["python", "bot4.py"])
 
     except Exception as e:
         update.message.reply_text(f"❌ restore gagal\n{e}")
